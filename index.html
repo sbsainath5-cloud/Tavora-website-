@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TAVORA Private Detective Agency — Confidential, professional and lawful investigation services. The Truth Matters.">
+  <title>TAVORA Private Detective Agency | The Truth Matters</title>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --dark: #090909;
+      --panel: #151515;
+      --muted: #b9b9b9;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--dark);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 7%;
+      background: #080808;
+      border-bottom: 1px solid #66521d;
+    }
+    .brand { color: var(--gold); font-size: 24px; font-weight: bold; letter-spacing: 4px; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-size: 13px; }
+    nav a:hover { color: var(--gold); }
+    section { padding: 75px 8%; scroll-margin-top: 70px; }
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(ellipse at center, #29210d, #090909 65%);
+    }
+    .logo { width: 150px; height: 150px; margin-bottom: 20px; }
+    h1, h2 { color: var(--gold); }
+    h1 { font-size: clamp(36px, 7vw, 65px); letter-spacing: 7px; margin: 0; }
+    h2 { font-size: 30px; text-align: center; margin-bottom: 28px; }
+    .tagline { letter-spacing: 5px; color: white; }
+    .intro { max-width: 760px; color: #ddd; text-align: center; }
+    .gold-button {
+      display: inline-block;
+      padding: 13px 25px;
+      margin-top: 22px;
+      background: var(--gold);
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .service {
+      background: var(--panel);
+      border: 1px solid #493b19;
+      padding: 22px;
+      border-radius: 5px;
+    }
+    .service h3 { color: var(--gold); margin-top: 0; }
+    .service p { color: var(--muted); font-size: 14px; }
+    .form-wrap {
+      max-width: 720px;
+      margin: auto;
+      padding: 28px;
+      background: var(--panel);
+      border: 1px solid #66521d;
+      border-radius: 6px;
+    }
+    label { display: block; margin: 14px 0 6px; color: #eee; }
+    input, select, textarea {
+      width: 100%;
+      padding: 13px;
+      background: #080808;
+      border: 1px solid #555;
+      border-radius: 3px;
+      color: white;
+      font: inherit;
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    .consent { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #ccc; }
+    .consent input { width: auto; margin-top: 5px; }
+    .submit {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      background: var(--gold);
+      color: #111;
+      border: 0;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .notice { color: #ccc; font-size: 13px; }
+    .legal { max-width: 900px; margin: auto; color: #ccc; }
+    footer { text-align: center; padding: 25px; background: #050505; color: #999; }
+    @media(max-width:650px) {
+      header { align-items: flex-start; flex-direction: column; gap: 10px; }
+      nav { gap: 12px; }
+      section { padding: 55px 6%; }
+      .form-wrap { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">TAVORA</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#enquiry">Enquiry</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#terms">Terms</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <svg class="logo" viewBox="0 0 200 200" role="img" aria-label="TAVORA triangular eye logo">
+    <path d="M100 12 L188 170 H12 Z" fill="none" stroke="#d4af37" stroke-width="5"/>
+    <path d="M42 100 Q100 42 158 100 Q100 158 42 100Z" fill="none" stroke="#d4af37" stroke-width="5"/>
+    <circle cx="100" cy="100" r="20" fill="none" stroke="#d4af37" stroke-width="5"/>
+    <circle cx="100" cy="100" r="7" fill="#d4af37"/>
+  </svg>
+  <h1>TAVORA</h1>
+  <p class="tagline">PRIVATE DETECTIVE AGENCY</p>
+  <p class="tagline">THE TRUTH MATTERS.</p>
+  <a class="gold-button" href="#enquiry">SUBMIT AN ENQUIRY</a>
+</section>
+
+<section id="about">
+  <h2>About TAVORA</h2>
+  <p class="intro">
+    TAVORA Private Detective Agency is committed to providing professional,
+    discreet and responsible investigation assistance. We value confidentiality,
+    respect privacy and handle every enquiry with care. Our approach focuses on
+    lawful methods, clear communication and careful verification.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <article class="service"><h3>Pre-Wedding Verification</h3><p>Lawful background verification support before marriage decisions.</p></article>
+    <article class="service"><h3>Post-Wedding Verification</h3><p>Discreet assistance with specific matrimonial concerns.</p></article>
+    <article class="service"><h3>Matrimonial Background Check</h3><p>Verification of relevant background information through lawful sources.</p></article>
+    <article class="service"><h3>Relationship Verification</h3><p>Responsible assistance with relationship-related concerns.</p></article>
+    <article class="service"><h3>Missing Person Assistance</h3><p>Assistance in gathering lawful leads and coordinating with appropriate authorities where necessary.</p></article>
+    <article class="service"><h3>Personal Background Verification</h3><p>Background verification using lawful and authorized methods.</p></article>
+    <article class="service"><h3>Employee Background Verification</h3><p>Employment-related checks with appropriate consent and authorization.</p></article>
+    <article class="service"><h3>Corporate Investigation</h3><p>Professional support for legitimate business-related enquiries.</p></article>
+    <article class="service"><h3>Address &amp; Identity Verification</h3><p>Verification of relevant details through lawful means and permitted sources.</p></article>
+  </div>
+</section>
+
+<section id="enquiry">
+  <h2>Customer Enquiry</h2>
+  <div class="form-wrap">
+    <p class="notice">Please provide accurate information. Our team may contact you by phone regarding your enquiry.</p>
+    <form id="enquiryForm">
+      <label for="name">Full Name *</label>
+      <input id="name" name="name" autocomplete="name" required>
+
+      <label for="phone">Phone Number *</label>
+      <input id="phone" name="phone" type="tel" inputmode="tel" pattern="[0-9+() -]{8,20}" autocomplete="tel" required>
+
+      <label for="email">Email Address (Optional)</label>
+      <input id="email" name="email" type="email" autocomplete="email">
+
+      <label for="location">Location *</label>
+      <input id="location" name="location" required>
+
+      <label for="service">Required Service *</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option>Pre-Wedding Verification</option>
+        <option>Post-Wedding Verification</option>
+        <option>Matrimonial Background Check</option>
+        <option>Relationship Verification</option>
+        <option>Missing Person Assistance</option>
+        <option>Personal Background Verification</option>
+        <option>Employee Background Verification</option>
+        <option>Corporate Investigation</option>
+        <option>Address &amp; Identity Verification</option>
+      </select>
+
+      <label for="date">Preferred Date *</label>
+      <input id="date" name="date" type="date" required>
+
+      <label for="time">Available Time *</label>
+      <input id="time" name="time" type="time" required>
+
+      <label for="remarks">Customer Remarks / Additional Information</label>
+      <textarea id="remarks" name="remarks" maxlength="1500" placeholder="Share only information relevant to your enquiry. Avoid sensitive personal details at this stage."></textarea>
+
+      <label class="consent">
+        <input type="checkbox" id="consent" required>
+        <span>I have read and agree to the Privacy Policy and Terms &amp; Conditions. *</span>
+      </label>
+
+      <button class="submit" type="submit">SUBMIT ENQUIRY</button>
+      <p id="formMessage" class="notice" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section id="privacy">
+  <h2>Privacy Policy</h2>
+  <div class="legal">
+    <p>We treat customer identity, enquiries and case-related information as confidential. We do not publicly disclose who contacted the agency or what enquiry they submitted, except where disclosure is required by applicable law.</p>
+    <p>Enquiry information is used to respond to the customer and assess the requested service. Access should be limited to authorized personnel. We take reasonable steps to protect submitted information and retain it only as long as reasonably necessary for service and legal obligations.</p>
+    <p>Customers may request correction or deletion of their information, subject to applicable legal requirements. We do not use enquiry details for unrelated marketing without appropriate permission.</p>
+  </div>
+</section>
+
+<section id="terms">
+  <h2>Terms &amp; Conditions</h2>
+  <div class="legal">
+    <p>Customers must provide accurate information and a lawful reason for requesting an investigation. Customers must obtain any permissions or authorizations required for the requested service and cooperate with reasonable verification requests.</p>
+    <p>TAVORA will use only lawful and authorized methods. We do not undertake stalking, harassment, unauthorized access to accounts, devices or communications, or unlawful collection of private records.</p>
+    <p>Findings depend on the accuracy of information and lawful availability of records or evidence. No specific outcome or 100% verification result is guaranteed. Missing-person enquiries may require coordination with law-enforcement or other appropriate authorities.</p>
+    <p>Service availability and acceptance are subject to an initial review of the enquiry and applicable law.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 TAVORA Private Detective Agency. All Rights Reserved.</p>
+  <p>THE TRUTH MATTERS.</p>
+</footer>
+
+<script>
+  // Add the verified Google Apps Script Web App URL here after backend setup.
+  const SCRIPT_URL = "PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE";
+
+  const dateField = document.getElementById("date");
+  const today = new Date();
+  const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+    .toISOString().slice(0, 10);
+  dateField.min = localToday;
+
+  document.getElementById("enquiryForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+    const message = document.getElementById("formMessage");
+
+    if (SCRIPT_URL === "PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE") {
+      message.textContent = "Enquiry submission is not available yet. Please try again later.";
+      return;
+    }
+
+    const data = Object.fromEntries(new FormData(this).entries());
+    data.consent = document.getElementById("consent").checked;
+
+    message.textContent = "Sending your enquiry...";
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(data)
+      });
+      message.textContent = "Your submission request was sent. The agency will verify receipt. If you do not hear from us, please contact us again.";
+      this.reset();
+    } catch (error) {
+      message.textContent = "We could not send your enquiry. Please try again later.";
+    }
+  });
+</script>
+</body>
+</html>
+  
